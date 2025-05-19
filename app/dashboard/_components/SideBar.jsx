@@ -34,7 +34,7 @@ return (
                     <h2 className='font-bold text-2xl'>Easy Study</h2>
             </div>
             <div className='mt-10'>
-                    <Button className='w-full'>+ Create New</Button>
+                    <Link href={'/create'} className='w-full'><Button className='w-full'>+ Create New</Button></Link>
                     <div className='mt-5'>
                             {MenuList.map((menu, index) => (
                                     <div key={index} className={`flex gap-5 items-center p-3 hover:bg-slate-200 rounded-lg cursor-pointer mt-3 ${path == menu.path && 'bg-slate-200'}`}>
