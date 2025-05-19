@@ -15,7 +15,7 @@ export default defineConfig({
 /**
  * To run Drizzle Studio, use the following command in your terminal:
  * 
- * npx drizzle-kit studio
+ * npx -kit studidrizzleo
  * 
  * Make sure your drizzle.config.js is properly configured and your database is accessible.
  */
@@ -24,7 +24,7 @@ import { defineConfig } from 'drizzle-kit';
 
 export default defineConfig({
   out: './drizzle',
-  schema: './src/db/schema.js', // Change .ts to .js
+  schema: './configs/schema.js', // Change .ts to .js
   dialect: 'postgresql',
   dbCredentials: {
     url: process.env.NEXT_PUBLIC_DATABASE_STRING || 'postgresql://neondb_owner:npg_6fuNEwgqpV8T@ep-shrill-rain-a19tlums-pooler.ap-southeast-1.aws.neon.tech/Ai-Study-Material-Gen?sslmode=require',
